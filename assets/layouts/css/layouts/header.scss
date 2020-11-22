@@ -1,0 +1,148 @@
+/*--------------------
+	Code By - Md Ayatullah Rahmani
+--------------------*/
+.click-main-header{
+	background: #0000001a;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+	left: 0px;
+	z-index: 9999;
+	 &.fixed-header{
+		background:$headerBgColor;
+	 }
+		.click-header-content{
+			@include flexbox();
+			@include justify-content(space-between);
+			@include align-items(center);
+			.menu-wrapper{
+				.nav-click{
+					ul{
+						@include resetUl();
+						@include flexbox();
+						@include justify-content(center);
+						li{
+							padding:0px;
+							margin: 0px 0px 0px 5px;
+							a{
+							    color: $light-text-color;
+								display: block;
+								padding: 10px 11px;
+								font-size:$base-font-size;
+								text-decoration: none;
+								&.active{
+									color:$highlight-color
+								}
+							}
+						}
+					}
+				}
+			}
+			.rignt-menu-sec{
+				@include flexbox();
+				@include align-items(center);
+				.action-header-nav{
+					margin-left: 10px;
+				}
+				.user-profiles-header{
+					a{
+						position: relative;
+						@include flexbox();
+				        @include align-items(center);
+						span.img-pf{
+							height:40px;
+							width:40px;
+							background:url(../../images//defaultProfile.png) no-repeat;
+							background-size: 100% 100%;
+							display: block;
+						}
+						.icon-pf{
+							color:$light-text-color;
+						}
+						img{
+							height: 100%;
+							width: 100%;
+							@include border-radius(50%);
+						}
+					}
+				}
+			}
+		}
+
+}
+
+
+		/*** menu list ***/
+		.menu-list{
+			ul{
+				@include resetUl();
+				li{
+					padding:0px;
+					margin: 0px;
+					a{
+						color:$dark-text-color;
+						display: block;
+						padding: 10px 11px;
+						font-size:$base-font-size;
+						text-decoration: none;
+						&:hover{
+							background: $highlight-color;
+						}
+						&.active{
+						  background: $highlight-color;
+						  color:#fff;
+						}
+					}
+				}
+			}
+		}
+	.mat-click-expand{
+
+	}
+
+	.mat-login-menu{
+		min-width: 170px !important;
+		.log-menu-header{
+			padding: 9px 11px;
+			border-bottom: solid 1px #ddd;
+			padding-top: 1px;
+			h4{
+				font-family: $font-semiBold;
+				font-size: 14px;
+				color:$title-Text-color;
+				margin: 0px;
+				text-align: center
+			}
+			.profile-img{
+				height: 80px;
+				margin: auto;
+				width: 80px;
+				margin-bottom: 2px;
+				img{
+					height: 100%;
+					width: 100%;
+					border-radius: 50%;
+				}
+			}
+		}
+		.menu-list{
+			ul{
+				li{
+					a{
+						padding: 9px 11px;
+						border-bottom: solid 1px #ddd;
+						@include flexbox();
+						@include align-items(center);
+						.material-icons{
+							padding-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+

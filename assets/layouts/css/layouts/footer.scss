@@ -1,0 +1,102 @@
+.click-footer-wrap{
+    background: #fbfbfb;
+    margin-top: 55px;
+    box-shadow: 0px -12px 9px -13px #00000059;
+    border-top: solid 4px $primary-color;
+    padding-top: 8px;
+    .footer-inner{
+        @include flexbox();
+        @include flex-wrap(wrap);
+        padding-bottom: 10px;
+        .footer-col{
+            width:25%;
+            min-height: 100px;
+            .footer-col-data{
+                h4{
+                    font-size: 1rem;
+                    font-family:$font-semiBold;
+                    color:$base-text-color;
+                    margin: 0px;
+                    padding: 11px 0px;
+                }
+                .footer-menu{
+                    ul{
+                        @include resetUl();
+                        li{
+                            @include resetUl();
+                            a{
+                              text-decoration: none;
+                              color:$base-text-color;
+                              font-size: 0.8rem;
+                              display: block;
+                              padding: 5px 0px;
+                              .material-icons{
+                                vertical-align: middle;
+                                font-size: 1.3rem;
+                              }
+                              &:hover{
+                                  color: $highlight-color;
+                              }
+                              &.active{
+                                // background: $highlight-color;
+                                // color:#fff;
+                              }
+                            }
+                        }
+                    }
+                }
+
+                .social-link{
+                    ul{
+                        @include resetUl();
+                        @include flexbox();
+                        @include flex-wrap(wrap);
+                        li{
+                            @include resetUl();
+                            a{
+                              text-decoration: none;
+                              color:$base-text-color;
+                              font-size: 1.8rem;
+                              display: block;
+                              line-height: 0px;
+                              margin-left: 6px;
+                              .material-icons{
+                                vertical-align: middle;
+                                font-size: 1.3rem;
+                              }
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom{  
+        font-size: 14px;
+        padding: 11px 0px;
+        border-top: solid 1px #e8eaee;
+        .footer-bottom-inner{
+            @include flexbox();
+            @include justify-content(space-between);
+            label{
+                margin: 0px;
+            }
+            a{
+                color:$base-text-color;
+                display: inline-block;
+                padding-left: 20px;
+                &:first-child{
+                    padding-left: 0px;
+                }
+            }
+            .foot-left{
+                &.copy{
+                    color: $base-text-color;
+                }
+            }
+            
+        }
+    }
+}

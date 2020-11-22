@@ -1,0 +1,165 @@
+.mat-form-field{
+    display: block !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: $base-text-color;
+    font-size: $form-font-size;
+    font-family: $base-font;
+}
+input.mat-input-element{
+    color: $base-text-color !important;
+    font-size: $form-font-size;
+    font-family: $base-font;
+}
+.mat-form-field{
+    font-family: $base-font !important;
+	font-size: $form-font-size;
+}
+.cdk-overlay-container{
+  z-index: 9999 !important;
+}
+.mat-checkbox{
+    font-family: $base-font !important;
+}
+.mat-form-field-label{
+	color:$form-text-color;
+	font-size: $form-font-size;
+}
+.mat-radio-label-content{
+	color:$form-text-color;
+	font-family: $base-font !important;
+	font-size: $form-font-size;
+}
+.checkError{
+    .mat-checkbox-label{
+      color:$error-color;
+    }
+    .mat-checkbox-frame {
+        border-color:$error-color;
+    }
+    .mat-radio-outer-circle {
+        border-color: $error-color;
+    }
+    .mat-radio-label-content{
+        color:$error-color;
+    }
+}
+
+.mat-radio-button,.mat-list-item{
+	font-family: $base-font !important;
+}
+.material-icons{
+	vertical-align: middle;
+	font-size: inherit;
+}
+/***  card**/
+
+.click-card{
+	&:not(.no-header){
+           padding-top: 0px;
+	}
+	.mat-card-header{
+		margin-left: -15px;
+		margin-right: -15px;
+		border-bottom: solid 1px #ddd;
+		padding: 14px 0px;
+		@media only screen and (max-width:768px){
+			padding: 9px 0px;
+		  }
+		&.inside-header-mat{
+			display: flex;
+			justify-content: space-between;
+			padding: 21px 23px;
+			padding: 6px 0px;
+			align-items: center;
+		}
+		.mat-card-title {
+			font-size:15px;
+			font-family:$font-bold;
+			color:$base-text-color;
+			margin: 0px;
+			@media only screen and (max-width:768px){
+				font-size: 12px;
+			 }
+		}
+	}
+	.mat-card-content{
+		padding: 10px 0px;	
+		margin: 0px;
+	}
+	.mat-card-actions{
+		margin-left: -15px;
+		margin-right: -15px;
+		border-top: solid 1px #ddd;
+		padding: 10px 15px;
+	}
+}
+
+.click-mat-radio-horz{
+	.radio-labels{
+		display: block;
+		color:$form-text-color;
+		font-family: $base-font !important;
+		font-size: $form-font-size;
+		margin-bottom: 2px;
+	}
+	.mat-radio-button {
+		margin-right: 11px;
+	}
+}
+
+.click-modal {
+	@media only screen and (max-width:768px){
+		max-width: 99% !important;
+		width:100% !important;
+	}
+	.mat-dialog-content{
+		position: relative;
+		margin: 0 0px;
+		padding: 10px 15px;
+	}
+	.mat-dialog-container {
+		padding: 0px;
+		.mat-header {
+			border-bottom: solid 1px #ddd;
+			padding: 8px 15px;
+			color: $base-color1;
+			position: relative;
+		}
+		.mat-dialog-title {
+			font-family: $font-semiBold;
+			font-size: 16px;
+			margin: 0px;
+			padding-right: 20px;
+			span.sb-title{
+				font-size: 13px;
+				color:#fff;
+				background:$base-color4;
+				padding: 1px 9px;
+				font-family: $font-light;
+				@include border-radius(3px);
+			}
+		}
+		.mat-dialog-actions {
+			padding: 8px 15px;
+			min-height: 28px;
+			margin-bottom: 0px;
+            border-top: solid 1px #ddd;
+		}
+	}
+}
+.btn-cross-model{
+	position: absolute;
+    top: 13px;
+    right: 13px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #9a9a9a;
+	background: none;
+	@media only screen and (max-width:768px){
+		top: 7px;
+	}
+}
+
+

@@ -1,0 +1,75 @@
+/*--------------------
+	Code By - Md Ayatullah Rahmani
+--------------------*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+  }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    line-height:16px !important;
+    font-family:$base-font !important;
+    font-size: $base-font-size !important;
+  }
+  
+  
+  h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    padding:0px;
+  }
+  a{
+    text-decoration: none;
+     color: #0095da;
+  }
+  p{
+    margin: 0px;
+  }
+  label{
+    margin: 0px;
+  }
+  img{
+    max-width: 100%;
+  }
+  .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .click-main-wrapper{
+    .click-main-container{
+      margin-top: 72px;
+    }
+    &.home-click{
+      .click-main-container{
+        margin-top: 0px;
+      }
+      .click-main-header{
+        background: #0000001a;
+        &.fixed-header{
+          background:$headerBgColor;
+         }
+       }
+    }
+    .click-main-header{
+      background:$headerBgColor;
+     }
+  }
+  .click-container{
+    padding: 0px 20px;
+  }
+  .click-content-wrapper{
+    padding: 25px 0px 0px 0px;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+
+  

@@ -1,0 +1,44 @@
+.click-form{
+  .click-form-row{
+      
+  }
+  &.click-form-vertical{
+
+  }
+  &.modal-form-wrap{
+    padding:5px 0px;
+  }
+}
+
+.click-custom-file {
+	height: 46px;
+	.custom-file-label {
+		font-size: 15px;
+		padding: 22px 10px;
+		line-height: 0px;
+		font-family: $base-font;
+		color: rgba(0,0,0,.6);
+		&::after {
+			background-color: $base-color2;
+			color: #fff;
+			height: 44px;
+			line-height: 32px;
+		}
+	}
+}
+
+.click-custom-upload-btn {
+  text-align: center;
+     input{
+       display: none;
+     }
+     label{
+       display: inline-block;
+       background: $btn-bg-color;
+       color: #fff;
+       padding: 5px 10px;
+       font-size: 0.8rem;
+       border-radius: 3px;
+       cursor: pointer;
+     }
+}

@@ -1,0 +1,41 @@
+.youxta-snackbar{
+    &.mat-snack-bar-container {
+        color: $primary-color;
+        background: #ffffff;
+    }
+    .youxta-mat-snack{
+        position: relative;
+        padding-left: 20px;
+        padding-right: 5px;
+        span.icons{
+            position: absolute;
+            left: -6px;
+            font-size: 18px; 
+            top: 50%;
+           @include transforms(translate(0,-50%));
+            &.suc{
+                color:green
+            }
+            &.error{
+                color:red
+            }
+        }
+       label{
+        color: $primary-color;
+        font-size: 14px;
+        font-family: $base-font;
+        padding-right:2px;
+       }
+       .hideSnack{
+            color: #22ccff;
+            background: none;
+            outline: none;
+            border: none;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            font-size: 14px;
+            @include transforms(translate(0,-50%));
+       }
+    }
+}

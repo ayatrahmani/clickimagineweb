@@ -1,0 +1,39 @@
+.click-list{
+    .mat-list-item{
+        color:$base-text-color;
+        height: auto !important;
+        padding: 13px 0px !important;
+        &:nth-child(even){
+        // background: $base-color7;
+        }
+        @media only screen and (max-width:768px){
+            padding: 3px 0px !important;
+         }
+    }
+    .list-wraps{
+        @include flexbox();
+        @include align-items(center);
+        @include flex-wrap(wrap);
+        font-size:0.9rem;
+        @media only screen and (max-width:768px){
+            font-size: 14px;
+            width:100%;
+         }
+        .list-title{
+            width: 270px;
+            min-width: 270px;
+            font-weight: bold;
+            @media only screen and (max-width:768px){
+                width:100%;
+                min-width: 20px;
+                padding-bottom: 7px;
+             }
+        }
+        .list-info{
+            word-break: break-all;
+            @media only screen and (max-width:768px){
+                width:100%;
+             }
+        }
+    }
+}

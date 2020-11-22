@@ -1,0 +1,28 @@
+.click-card{
+    border:solid 1px #ededed;
+    box-shadow: 0px 2px 3px #ddd;
+    .click-card-header{
+        border-bottom: solid 1px #ededed;
+        padding: 12px 20px;
+        box-shadow: 0px 21px 12px -21px #000000e3;
+        .click-card-title{
+            font-size: 1rem;
+            font-family: $font-semiBold;
+            margin: 0;
+            color:$title-text-color
+        }
+        &.click-header-align{
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            padding: 8px 20px;
+            .btn-header{
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.card-box{
+    margin-bottom: 30px;
+}
